@@ -42,7 +42,7 @@ app.route('/')
     })
 
 app.post("/upload", uploads.single("file"), function(req, res) {
-  
+  return res.json(req.file);
 });
 
 // Respond not found to all the wrong routes
