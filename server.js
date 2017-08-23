@@ -36,13 +36,14 @@ app.route('/_api/package.json')
     });
   });
   
-app.route('/')
-    .get(function(req, res) {
-		  res.sendFile(process.cwd() + '/views/index.html');
-    })
+app.route('/').get(function(req, res) {
+  res.sendFile(process.cwd() + '/views/index.html');
+});
 
 app.post("/upload", uploads.single("file"), function(req, res) {
+  
   return res.json(req.file);
+  
 });
 
 // Respond not found to all the wrong routes
