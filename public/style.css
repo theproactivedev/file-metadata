@@ -4,12 +4,15 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #000;
-	text-align: center;
 }
 
 .container {
 	padding: 0;
 	margin-top: 40px;
+}
+
+form {
+  padding-top: 30px;
 }
 
 .form-group {
@@ -21,8 +24,11 @@ body {
   padding: 15px;
 }
 
-.footer {
-	margin-top: 60px;
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 ol {

@@ -12,23 +12,31 @@
 
    <body>
       <div class="container">
-        <div>
-          <h1>
-            <i class="fa fa-file" aria-hidden="true"></i>
-            File Metadata Microservice
-          </h1>
-          <small>Fifth Challenge in Free Code Camp's API Projects</small>
+        <div class="row">
+          <div>
+            <h1>
+              <i class="fa fa-file" aria-hidden="true"></i>
+              File Metadata Microservice
+            </h1>
+            <small>Fifth Challenge in Free Code Camp's API Projects</small>
+          </div>
+        
+          <div class="row">
+            <form action="/upload" method="post" class="col-sm-12 col-md-8 col-lg-6">
+             <div class="form-group">
+               <label for="file-input">Select a File</label>
+               <input type="file" id="file-input" name="file" class="form-control">
+             </div>
+             <div class="form-group">
+               <input type="submit" value="Submit" class="btn btn-primary">
+             </div>
+            </form>
+          </div>
         </div>
         
-         <form>
-           <div class="form-group">
-             <label for="file-input">Select a File</label>
-             <input type="file" id="file-input" name="file" class="form-control">
-           </div>
-           <div class="form-group">
-             <input type="submit" value="Submit" class="btn btn-primary">
-           </div>
-        </form>
+        <footer>
+          <p class="text-center">by <a href="http://eiringonzales.com/" target="_blank">eirin gonzales</a></p>
+        </footer>
       </div>
    </body>
 
