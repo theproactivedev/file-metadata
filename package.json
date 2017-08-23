@@ -1,5 +1,5 @@
 {
-  "name": "fcc-learn-npm-package-json",
+  "name": "file-metadata",
   "dependencies": {
     "express": "^4.14.0",
     "multer": "^1.3.0"
@@ -14,5 +14,14 @@
   "repository": {
     "type": "git",
     "url": "https://idontknow/todo.git"
-  }
+  },
+  "description": "You upload a file and you receive details about the file.",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "keywords": [
+    "file-metadata",
+    "multer"
+  ],
+  "author": "Eirin Gonzales",
+  "license": "ISC"
 }
