@@ -9,6 +9,9 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 
+var multer = require("multer");
+var uploads = multer({dest: "uploads/"})
+
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
     var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
@@ -38,7 +41,9 @@ app.route('/')
 		  res.sendFile(process.cwd() + '/views/index.html');
     })
 
-// app.post("/upload", )
+app.post("/upload", uploads.single("file"), function(req, res) {
+  
+});
 
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
