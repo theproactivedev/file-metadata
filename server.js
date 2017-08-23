@@ -27,6 +27,8 @@ if (!process.env.DISABLE_XORIGIN) {
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
+app.set("json spaces",2);
+
 app.route('/_api/package.json')
   .get(function(req, res, next) {
     console.log('requested');
