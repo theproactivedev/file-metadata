@@ -10,7 +10,7 @@ var express = require('express');
 var app = express();
 
 var multer = require("multer");
-var uploads = multer({dest: "uploads/"})
+var uploads = multer({dest: "uploads/"});
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
